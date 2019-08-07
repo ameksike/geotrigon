@@ -1,0 +1,25 @@
+.ba3 {
+	background-image: url(../img/azul/mas.png) !important;
+}
+
+.ba4 {
+	background-image: url(../img/azul/menos.png) !important;
+}
+.reload {
+	background-image: url(../img/azul/reload.png) !important;
+}
+
+.savel{
+	background-image: url(../img/azul/savel.png) !important;
+}
+
+.x-tree-noIcon{
+	background-position:center center;
+	background-repeat:no-repeat;
+	border:0 none;
+	height:0px !important;
+	margin:0;
+	padding:0;
+	vertical-align:top;
+	width:0px !important;
+}

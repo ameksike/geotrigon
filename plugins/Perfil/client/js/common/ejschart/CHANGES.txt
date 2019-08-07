@@ -1,0 +1,49 @@
+Version 2.0.1
+
+1. New Features
+	* Added Series.getPadding, Series.setPadding methods
+	* Added Series.padding property
+	* Added Chart.legend_state (normal, minimized)
+	* Added Chart.legendMinimize, Chart.legendRestore, Chart.getLegendState methods
+	* Added ignoreBounds parameter to Axis.pointToPixel
+
+2. Bug Fixes
+	* BarSeries / FloatingBarSeries - Fixed dimension calculation which caused bars 
+	  to be missed if the mouse was close to an axis
+	* BarSeries / FloatingBarSeries - Updated point location / distance to return 
+	  exact matches when the mouse is within a bar
+	* Fixed issue with chart files when in a directory named ejschart_
+	* Corrected issue with axis.force_static_points and cursor position
+	* Corrected issue with legend icons causing non-secure warning in https session
+	* Added catch to all try/finally statements to account for IE bug 
+	* Corrected adjustment to so that crosshairs position exactly under the cursor					
+	* Renamed variable int to interval to correct Safari 2 parse issue
+	* Updated default series padding to account for axis assignment
+	* Corrected issue with horizontal bars not drawing when rendered 1 pixel wide
+
+3. Documentation Updates
+	* Added documentation for META tag options
+	* Added documentation for Series.findClosestByPoint and Series.findClosestByPixel
+
+
+Version 2.0
+
+1. New Features:
+	* Multiple X and Y Axes 
+	* Logarithmic Axis 
+	* JSON String and File Data Handlers 
+	* Stacked Bar Series 
+	* Floating Bar Series 
+	* String Formatter for prefixing and appending to labels 
+	* OpenHighLowClose Series 
+	* Candlestick Series 
+	* Filled Scatter Series Points in IE 
+	* Much optimized rendering of axis labels and ticks 
+	* Cleaner and smaller HTML generation of chart objects 
+	* Faster chart rendering and much better support for many 
+	  charts in a single page 
+	* Removed the need for EJSChartIE.css and EJSChartIE6.css 
+	* Better control over styling of major tick marks 
+	* More styling options for grid lines and axis borders 
+	* Easier customization of cursor position elements 
+	* Background coloring with opacity of the chart area and axes

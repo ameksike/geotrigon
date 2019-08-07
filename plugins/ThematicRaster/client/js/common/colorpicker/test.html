@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>ColorPickerField Test</title>
+		<link rel='stylesheet' type='text/css' href='../ext/ext-2.0/resources/css/ext-all.css' />
+		<link rel="stylesheet" type="text/css" href="colorpicker.css" />
+
+		<script type="text/javascript" src="../ext/ext-2.0/adapter/ext/ext-base.js"></script>
+		<script type="text/javascript" src="../ext/ext-2.0/ext/ext-all.js"></script>
+
+		<script type="text/javascript" src="../fieldpanel/fieldpanel.js"></script>
+		<script type="text/javascript" src="colorpicker.js"></script>
+		<script type="text/javascript" src="colorpickerfield.js"></script>
+				
+		<script type="text/javascript">
+			Ext.QuickTips.init();
+			Ext.form.Field.prototype.msgTarget = 'side';
+			Ext.ux.form.FieldPanel.prototype.msgTarget = 'side';
+
+			Ext.onReady(function(){
+				var valid=true;
+				var enable=true;
+				var win = new Ext.Window({
+					renderTo: document.body,
+					title: "ColorPicker Test",
+					width: 600,
+					height: 400,
+					items: [{
+						xtype: 'form',
+						border: false,
+						bodyStyle: 'background-color:#DFE8F6; padding-top:10px',
+						labelAlign: 'right',
+						labelWidth: 50,
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: 'Name',
+							name: 'name'
+						}, {
+							xtype: 'colorpickerfield',
+							fieldLabel: 'Color',
+							name: 'color',
+							value: '123456'
+						}]
+					}],
+					buttons:[{
+						text:"Invalid",
+						handler:function(){
+							var form=win.getComponent(0).getForm();
+							var n=form.findField('name');
+							var c=form.findField('color');
+							if (valid) {
+								n.markInvalid();
+								c.markInvalid();
+								valid = false;
+							} else {
+								n.clearInvalid();
+								c.clearInvalid();
+								valid = true;
+							}
+						}
+					}, {
+						text:"Disable",
+						handler: function(){
+							var form=win.getComponent(0).getForm();
+							var n=form.findField('name');
+							var c=form.findField('color');
+							if (enable) {
+								n.disable();
+								c.disable();
+								enable = false;
+							} else {
+								n.enable();
+								c.enable();
+								enable = true;
+							}
+						}
+					}, {
+						text:"Values",
+						handler: function(){
+							var form=win.getComponent(0).getForm();
+							var n=form.findField('name');
+							var c=form.findField('color');
+							Ext.Msg.alert("Value", "Name: "+n.getValue()+"<br />Color: "+c.getValue());
+						}
+					}]
+				});
+				win.show();
+			});
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

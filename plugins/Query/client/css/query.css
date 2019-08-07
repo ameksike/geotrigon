@@ -1,0 +1,31 @@
+
+.query {
+	background-image: url(../img/azul/query.png) !important;
+}
+
+.circle {
+        background-image: url(../img/azul/tb3c.png) !important;
+}
+.box {
+        background-image: url(../img/azul/tb3b.png) !important;
+}
+.triangle {
+        background-image: url(../img/azul/tb3k.png) !important;     
+}
+.point {
+        background-image: url(../img/azul/tb3a.png) !important;
+}
+.scapas {
+        background-image: url(../img/azul/scapas.png) !important;
+}
+
+
+.exel {
+        background-image: url(../img/azul/exe.png) !important;
+}
+.pdf {
+        background-image: url(../img/azul/pdf.png) !important;
+}
+.doc {
+        background-image: url(../img/azul/doc.png) !important;
+}

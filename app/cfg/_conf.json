@@ -1,0 +1,25 @@
+{
+	"db":{
+		"server":"localhost",
+		"name":"work",
+		"port":"5432",
+		"user":"postgres",
+		"passw":"postgres"
+	},
+	"map": {
+		"name":"qba.map",
+		"path":"server\/common\/data\/"
+	},
+	"plugins":[
+		"Layer",	
+		"Map",
+		"Navigation",
+		"Info",
+		"Perfil",
+		"Query",
+		"ThematicRaster",
+		"Contour",
+		"ClosestDegree",
+		"Measure"
+	]
+}

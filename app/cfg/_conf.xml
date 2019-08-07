@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root><core>Primal.php</core><core>Linker.php</core><interface>Auth.php</interface><db><server>localhost</server><name>work</name><port>5432</port><user>postgres</user><passw>postgres</passw></db><map><name>qba.map</name><path>server/common/data/</path></map><plugins>Layer</plugins><plugins>Map</plugins><plugins>Navigation</plugins><plugins>Info</plugins><plugins>Perfil</plugins><plugins>Query</plugins><plugins>ThematicRaster</plugins><plugins>Contour</plugins></root>

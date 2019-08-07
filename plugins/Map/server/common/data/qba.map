@@ -1,0 +1,512 @@
+MAP
+  EXTENT -75.9008145363408 19.85 -73.9491854636591 21.15
+  FONTSET "conf.lst"
+  IMAGECOLOR 255 255 255
+  IMAGETYPE png
+  INTERLACE TRUE
+  SYMBOLSET "symbol.sym"
+  SHAPEPATH "./data/gdal"
+  SIZE 640 480
+  STATUS ON
+  TRANSPARENT FALSE
+  UNITS DD
+  NAME "GEOWEB_GIS"
+
+  OUTPUTFORMAT
+    NAME "png"
+    MIMETYPE "image/png"
+    DRIVER "GD/PNG"
+    EXTENSION "png"
+    IMAGEMODE "RGBA"
+    TRANSPARENT FALSE
+    FORMATOPTION "INTERLACE=ON"
+  END
+
+  OUTPUTFORMAT
+    NAME "jpeg"
+    MIMETYPE "image/jpeg"
+    DRIVER "GD/JPEG"
+    EXTENSION "jpg"
+    IMAGEMODE "RGB"
+    TRANSPARENT FALSE
+    FORMATOPTION "INTERLACE=ON"
+  END
+
+  OUTPUTFORMAT
+    NAME "gif"
+    MIMETYPE "image/gif"
+    DRIVER "GD/GIF"
+    EXTENSION "gif"
+    IMAGEMODE "PC256"
+    TRANSPARENT FALSE
+    FORMATOPTION "INTERLACE=ON"
+  END
+
+  OUTPUTFORMAT
+    NAME "wbmp"
+    MIMETYPE "image/wbmp"
+    DRIVER "GD/WBMP"
+    EXTENSION "wbmp"
+    IMAGEMODE "PC256"
+    TRANSPARENT FALSE
+    FORMATOPTION "INTERLACE=ON"
+  END
+
+  OUTPUTFORMAT
+    NAME "GTiff"
+    MIMETYPE "image/tiff"
+    DRIVER "GDAL/GTiff"
+    EXTENSION "tif"
+    IMAGEMODE "RGB"
+    TRANSPARENT FALSE
+    FORMATOPTION "INTERLACE=ON"
+  END
+
+  SYMBOL
+    NAME "circle_pto"
+    TYPE ELLIPSE
+    FILLED TRUE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "psiFont"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#185;"
+    GAP 10
+    FONT "misc"
+    POSITION CC
+  END
+
+  SYMBOL
+    NAME "circle"
+    TYPE ELLIPSE
+    FILLED TRUE
+    POINTS
+      1 1
+    END
+  END
+
+  PROJECTION
+    "init=epsg:4267"
+  END
+  LEGEND
+    IMAGECOLOR 255 255 255
+    KEYSIZE 18 16
+    KEYSPACING 5 5
+    LABEL
+      SIZE MEDIUM
+      TYPE BITMAP
+      BUFFER 0
+      COLOR 0 0 89
+      FORCE FALSE
+      MINDISTANCE -1
+      MINFEATURESIZE -1
+      OFFSET 0 0
+      PARTIALS TRUE
+    END
+    POSITION LL
+    STATUS OFF
+  END
+
+  QUERYMAP
+    COLOR 255 255 0
+    SIZE -1 -1
+    STATUS OFF
+    STYLE HILITE
+  END
+
+  REFERENCE
+    COLOR -1 -1 -1
+    EXTENT -88.8709 15.3867 -68.9623 26.7588
+    IMAGE "../images/keymap.png"
+    OUTLINECOLOR 255 0 0
+    SIZE 150 84
+    STATUS OFF
+      MARKER 0
+      MARKERSIZE 0
+      MINBOXSIZE 3
+      MAXBOXSIZE 0
+  END
+
+  SCALEBAR
+    ALIGN CENTER
+    COLOR 0 0 0
+    IMAGECOLOR 255 255 255
+    INTERVALS 4
+    LABEL
+      SIZE MEDIUM
+      TYPE BITMAP
+      BUFFER 0
+      COLOR 0 0 0
+      FORCE FALSE
+      MINDISTANCE -1
+      MINFEATURESIZE -1
+      OFFSET 0 0
+      PARTIALS TRUE
+    END
+    POSITION LL
+    SIZE 200 3
+    STATUS OFF
+    STYLE 0
+    UNITS MILES
+  END
+
+  WEB
+    IMAGEPATH "/var/www/ms_tmp/"
+    IMAGEURL "/ms_tmp/"
+    QUERYFORMAT text/html
+    LEGENDFORMAT text/html
+    BROWSEFORMAT text/html
+  END
+
+  LAYER
+    CLASSITEM "[pixel]"
+    GROUP "Miscelaneas"
+    MAXSCALEDENOM 1e+07
+    METADATA
+      "wms_srs"	"EPSG:4267"
+      "wms_title"	"viewshade"
+    END
+    MINSCALEDENOM 1
+    NAME "viewshade"
+    PROJECTION
+      "proj=longlat"
+      "ellps=clrk66"
+      "datum=NAD27"
+      "no_defs"
+    END
+    STATUS ON
+    TEMPLATE "base"
+    TILEINDEX "srtm_index.shp"
+    TILEITEM "location"
+    OPACITY 70
+    TYPE RASTER
+    UNITS DD
+    CLASS
+      EXPRESSION ([pixel] > 0 AND [pixel] <= 40)
+      STYLE
+        ANGLE 360
+        COLOR 255 255 153
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        DATARANGE 0 40
+      END
+    END
+    CLASS
+      EXPRESSION ([pixel] > 40 AND [pixel] <= 80)
+      STYLE
+        ANGLE 360
+        COLOR 255 204 153
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        DATARANGE 40 80
+      END
+    END
+    CLASS
+      EXPRESSION ([pixel] > 80 AND [pixel] <= 120)
+      STYLE
+        ANGLE 360
+        COLOR 255 0 0
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        DATARANGE 80 120
+      END
+    END
+    CLASS
+      EXPRESSION ([pixel] > 120 AND [pixel] <= 160)
+      STYLE
+        ANGLE 360
+        COLOR 235 255 5
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        DATARANGE 120 160
+      END
+    END
+    CLASS
+      EXPRESSION ([pixel] > 160 AND [pixel] <= 200)
+      STYLE
+        ANGLE 360
+        COLOR 255 200 5
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        DATARANGE 160 200
+      END
+    END
+    CLASS
+      EXPRESSION ([pixel] > 200 AND [pixel] <= 240)
+      STYLE
+        ANGLE 360
+        COLOR 153 51 0
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        DATARANGE 200 240
+      END
+    END
+    CLASS
+      EXPRESSION ([pixel] > 240 AND [pixel] <= 280)
+      STYLE
+        ANGLE 360
+        COLOR 145 145 10
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        DATARANGE 240 280
+      END
+    END
+    CLASS
+      EXPRESSION ([pixel] > 280 AND [pixel] <= 320)
+      STYLE
+        ANGLE 360
+        COLOR 0 0 255
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        DATARANGE 280 320
+      END
+    END
+    CLASS
+      EXPRESSION ([pixel] > 320 AND [pixel] <= 360)
+      STYLE
+        ANGLE 360
+        COLOR 255 0 0
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        DATARANGE 320 360
+      END
+    END
+    CLASS
+      EXPRESSION ([pixel] > 360 AND [pixel] <= 400)
+      STYLE
+        ANGLE 360
+        COLOR 255 153 204
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        DATARANGE 360 400
+      END
+    END
+  END
+
+  LAYER
+    GROUP "Mapa_250000"
+    MAXSCALEDENOM 500000
+    NAME "contorno"
+    PROJECTION
+      "proj=longlat"
+      "ellps=clrk66"
+      "datum=NAD27"
+      "no_defs"
+    END
+    STATUS ON
+    TEMPLATE "base"
+    TILEINDEX "cont_index.shp"
+    TILEITEM "location"
+    TYPE LINE
+    UNITS METERS
+    CLASS
+      NAME "Contorno"
+      STYLE
+        ANGLE 360
+        ANTIALIAS TRUE
+        COLOR 10 0 0
+        SYMBOL 0
+        WIDTH 1
+      END
+    END
+  END
+
+  LAYER
+    GROUP "Mapa_250000"
+    MAXSCALEDENOM 1.5e+06
+    NAME "sombra"
+    PROJECTION
+      "proj=longlat"
+      "ellps=clrk66"
+      "datum=NAD27"
+      "no_defs"
+    END
+    STATUS ON
+    TEMPLATE "base"
+    TILEINDEX "shd_index.shp"
+    TILEITEM "location"
+    OPACITY 80
+    TYPE RASTER
+    UNITS METERS
+    CLASS
+      NAME "Sombra"
+      EXPRESSION ([pixel] != 195)
+      STYLE
+        ANGLE 360
+        COLOR 90 90 90
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        COLORRANGE 0 0 0  255 255 255
+        DATARANGE 0 255
+      END
+    END
+  END
+
+  LAYER
+    CLASSITEM "[pixel]"
+    GROUP "Mapa_250000"
+    MAXSCALEDENOM 1e+07
+    MINSCALEDENOM 1
+    NAME "relieve"
+    PROJECTION
+      "proj=longlat"
+      "ellps=clrk66"
+      "datum=NAD27"
+      "no_defs"
+    END
+    STATUS ON
+    TEMPLATE "base"
+    TILEINDEX "srtm_index.shp"
+    TILEITEM "location"
+    OPACITY 40
+    TYPE RASTER
+    UNITS METERS
+    CLASS
+      NAME "rango_0-70"
+      EXPRESSION ([pixel] > 0 AND [pixel] <= 70)
+      STYLE
+        ANGLE 360
+        COLOR 50 126 0
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        COLORRANGE 0 50 0  50 126 0
+        DATARANGE 0 70
+      END
+    END
+    CLASS
+      NAME "rango_70-150"
+      EXPRESSION ([pixel] > 70 AND [pixel] <= 150)
+      STYLE
+        ANGLE 360
+        COLOR 140 140 0
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        COLORRANGE 50 126 0  140 140 0
+        DATARANGE 70 150
+      END
+    END
+    CLASS
+      NAME "rango_150-2000"
+      EXPRESSION ([pixel] > 150 AND [pixel] <= 2000)
+      STYLE
+        ANGLE 360
+        COLOR 90 0 0
+        SYMBOL 0
+        WIDTH 1
+        RANGEITEM "[pixel]"
+        COLORRANGE 140 140 0  90 0 0
+        DATARANGE 150 2000
+      END
+    END
+  END
+
+  LAYER
+    GROUP "Mapa"
+    METADATA
+      "DESCRIPTION"	"Grid"
+    END
+    NAME "grid"
+    PROJECTION
+      "proj=longlat"
+      "ellps=clrk66"
+      "datum=NAD27"
+      "no_defs"
+    END
+    STATUS OFF
+    TYPE LINE
+    UNITS METERS
+    CLASS
+      NAME "Graticula"
+      LABEL
+        ANGLE 0.000000
+        ANTIALIAS TRUE
+        FONT "Vera"
+        MAXSIZE 256
+        MINSIZE 4
+        SIZE 8
+        TYPE TRUETYPE
+        BUFFER 0
+        COLOR 0 0 0
+        FORCE FALSE
+        MINDISTANCE -1
+        MINFEATURESIZE -1
+        OFFSET 0 0
+        OUTLINECOLOR 255 255 255
+        PARTIALS TRUE
+        POSITION CC
+      END
+      STYLE
+        ANGLE 360
+        COLOR 0 0 0
+        SYMBOL 0
+        WIDTH 1
+      END
+    END
+      GRID
+        MINSUBDIVIDE 0
+        MAXSUBDIVIDE 0
+        MININTERVAL 0.000000
+        MAXINTERVAL 0.000000
+        MINARCS 0
+        MAXARCS 0
+        LABELFORMAT "(null)"
+      END
+  END
+
+  LAYER
+    GROUP "Contour"
+    LABELITEM "elev"
+    NAME "Contour_contour"
+    STATUS OFF
+    TEMPLATE "user"
+    OPACITY 80
+    TYPE LINE
+    UNITS METERS
+    CLASS
+      LABEL
+        ANGLE 0.000000
+        ANTIALIAS TRUE
+        FONT "Vera"
+        MAXSIZE 256
+        MINSIZE 4
+        SIZE 3
+        TYPE TRUETYPE
+        BUFFER 0
+        COLOR 128 0 128
+        FORCE FALSE
+        MINDISTANCE -1
+        MINFEATURESIZE -1
+        OFFSET 0 0
+        PARTIALS TRUE
+        POSITION UC
+      END
+      STYLE
+        ANGLE 360
+        ANTIALIAS TRUE
+        COLOR 255 0 0
+        OUTLINECOLOR 0 0 0
+        SYMBOL 0
+        WIDTH 1
+      END
+    END
+  END
+
+END

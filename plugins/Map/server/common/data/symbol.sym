@@ -1,0 +1,2813 @@
+
+SYMBOLSET
+            SYMBOL
+               NAME "edit_discontinua"
+               TYPE cartoline
+               LINECAP round
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+                STYLE
+                        10 4 
+                END
+            END
+
+            SYMBOL
+               NAME "edit_linea_division3"
+               TYPE cartoline
+               LINECAP round
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               PATTERN
+                       #   #   #
+                    14 5 2 5 2 5
+                END
+             END
+
+              SYMBOL
+               NAME "edit_linea_division2"
+               TYPE cartoline
+               LINECAP round
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               PATTERN
+                       #   #   #   #
+                    14 5 2 5 2 5 2 5
+                END
+             END
+
+             SYMBOL
+               NAME "edit_linea_division1"
+               TYPE cartoline
+               LINECAP round
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               PATTERN
+                       #   #
+                    14 5 2 5
+                END
+             END
+
+          SYMBOL
+               NAME "CartoLinea_Continua"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "CirculoVacio"
+               TYPE ELLIPSE
+               POINTS
+                    20 20
+               END
+               STYLE
+                    1 20 1 20
+               END
+               FILLED FALSE
+          END
+ 
+ 
+          SYMBOL #
+               NAME "ConducSoterrada"
+               TYPE cartoline
+               LINECAP round
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               ANTIALIAS FALSE
+               STYLE
+                    10 10 10 10
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "CirculoRelleno"
+               TYPE ELLIPSE
+               POINTS
+                    20 20
+               END
+               STYLE
+                    1 10 1 10
+               END
+               FILLED TRUE
+          END
+ 
+ 
+          SYMBOL
+               NAME "CirculoConduc"
+               TYPE ELLIPSE
+               POINTS
+                    15 15
+               END
+               STYLE
+                    0 15 1 15
+               END
+               FILLED TRUE
+          END
+ 
+ 
+          SYMBOL
+               NAME "CirculoRelleno"
+               TYPE ELLIPSE
+               POINTS
+                    1 1
+               END
+               FILLED TRUE
+               STYLE
+                    1 50
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea-Horizontal"
+               TYPE vector
+               POINTS
+                    0 0.5
+                    1 0.5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea-Vertical"
+               TYPE vector
+               POINTS
+                    0.5 0
+                    0.5 1
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Punto"
+               TYPE ELLIPSE
+               POINTS
+                    0 3
+                    3 2
+               END
+               FILLED TRUE
+          END
+ 
+ 
+          SYMBOL
+               NAME "Diagonal-Alante"
+               TYPE vector
+               POINTS
+                    0 1
+                    1 0
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Diagonal-Atras"
+               TYPE vector
+               POINTS
+                    0 0
+                    1 1
+               END
+          END
+ 
+ 
+          SYMBOL # grenzsignatur mit gleichem Muster, aber einem Rechteck als Grundelement
+               NAME "grenze2"
+               TYPE VECTOR
+               POINTS
+                    0 0
+                    1 0
+                    1 0.8
+                    0 0.8
+                    0 0
+               END
+               STYLE
+                    10 6 1 6
+               END
+               FILLED TRUE
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea-Horizontal-Discontinua"
+               TYPE vector
+               POINTS
+                    0 0
+                    0 3
+                    2 3
+                    2 0
+                    0 0
+               END
+               #FILLED TRUE
+          END
+ 
+ 
+          SYMBOL
+               NAME "zelt-leer"
+               TYPE VECTOR
+               POINTS
+                    0 1
+                    0.5 0
+                    1 1
+                    0.75 1
+                    0.5 0.5
+                    0.25 1
+                    0 1
+               END
+               FILLED FALSE
+               STYLE
+                    1 20 1 20
+               END
+               
+          END
+ 
+ 
+          SYMBOL # Andreaskreuz
+               NAME "kreuz2"
+               TYPE VECTOR
+               POINTS
+                    0 0
+                    1 1
+                    -99 -99
+                    0 1
+                    1 0
+               END
+               STYLE
+                    1 20 1 20
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "rectangulo"
+               TYPE VECTOR
+               POINTS
+                    0 0
+                    0 0.6
+                    1 0.6
+                    1 0
+                    0 0
+               END
+               FILLED TRUE
+               STYLE
+                    1 15 1 16
+               END
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "Cruz"
+               TYPE VECTOR
+               POINTS
+                    0 0
+                    1 1
+                    -99 -99
+                    0 1
+                    1 0
+               END
+               
+               # STYLE
+                    #  1 19 1 18
+               #  END
+               
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "Cruz1"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#121;"
+               
+               GAP -13
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "MascaraCruz"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#76;"
+               
+               GAP -13
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Presa1"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               #POSITION LL
+               FILLED TRUE
+               #CHARACTER "&#152;"
+               #CHARACTER "&#256;"
+               CHARACTER "&#258;"
+               GAP -4
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_PresaTemp"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               #POSITION LL
+               FILLED TRUE
+               #CHARACTER "&#152;"
+               #CHARACTER "&#256;"
+               CHARACTER "&#258;"
+               GAP -4
+          END
+ 
+ 
+          SYMBOL
+               NAME "pointCerca"
+               TYPE ELLIPSE
+               POINTS
+                    1 1
+               END
+               FILLED TRUE
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "pointCercaIntermitente"
+               TYPE ELLIPSE
+               POINTS
+                    1 1
+               END
+               FILLED TRUE
+               STYLE
+                    16 6
+               END
+          END
+ 
+ 
+          SYMBOL #
+               NAME "Discontinua"
+               TYPE cartoline
+               LINECAP round
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               
+               STYLE
+                    20 10 20 10
+               END
+          END
+ 
+ 
+          SYMBOL #
+               NAME "CARTO"
+               TYPE cartoline
+               # LINECAP round
+               # LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               
+               STYLE
+                    3 10
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "quadrat_solid"
+               TYPE VECTOR
+               POINTS
+                    0 0
+                    0 1
+                    1 1
+                    1 0
+                    0 0
+               END
+               FILLED TRUE
+          END
+ 
+ 
+          SYMBOL
+               NAME "quadrat"
+               TYPE VECTOR
+               POINTS
+                    0 0
+                    0 1
+                    1 1
+                    1 0
+                    0 0
+               END
+               FILLED TRUE
+               STYLE
+                    1 20 1 20
+               END
+          END
+ 
+ 
+          SYMBOL #
+               NAME "ConductoraGas"
+               TYPE cartoline
+               LINECAP round
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               ANTIALIAS FALSE
+               STYLE
+                    10 10 10 10
+               END
+          END
+ 
+ 
+          SYMBOL #
+               NAME "ConductoraCombust"
+               TYPE cartoline
+               LINECAP round
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               ANTIALIAS FALSE
+               STYLE
+                    10 10 10 10
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "CirculoSobterrada"
+               TYPE ELLIPSE
+               POINTS
+                    1 1
+               END
+               STYLE
+                    8 2 8 4
+               END
+               FILLED TRUE
+          END
+ 
+ 
+          SYMBOL #
+               NAME "CirculoSoterrada"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#96;"
+               
+               GAP -20
+          END
+ 
+ 
+          SYMBOL
+               NAME "stern"
+               TYPE VECTOR
+               POINTS
+                    0 0.375
+                    0.35 0.375
+                    0.5 0
+                    0.65 0.375
+                    1 0.375
+                    0.75 0.625
+                    0.875 1
+                    0.5 0.75
+                    0.125 1
+                    0.25 0.625
+                    0 0.375
+               END
+               FILLED TRUE
+               STYLE
+                    1 20 1 20
+               END
+          END
+ 
+ 
+          SYMBOL #
+               NAME "linie-gestr1"
+               TYPE cartoline
+               LINECAP round
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               
+               STYLE
+                    20 10 20 10
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "point"
+               TYPE ELLIPSE
+               POINTS
+                    1 1
+               END
+               FILLED TRUE
+          END
+ 
+ 
+          SYMBOL
+               NAME "rectangle-train"
+               TYPE VECTOR
+               POINTS
+                    0 0
+                    0 0.6
+                    1 0.6
+                    1 0
+                    0 0
+               END
+               FILLED TRUE
+               STYLE
+                    8 12 8 12
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "linie-horizontal"
+               TYPE vector
+               POINTS
+                    0 0.5
+                    1 0.5
+               END
+               
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "linie-horizontal1"
+               TYPE vector
+               POINTS
+                    0 0.5
+                    1 0.5
+               END
+               style
+               1  10
+               end
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "cartoline2"
+               TYPE cartoline
+               LINECAP butt      #[butt|round|square|triangle]
+               LINEJOIN miter      #[round|miter|bevel]
+               LINEJOINMAXSIZE 3   #
+               STYLE
+                    3 2 6 2 3
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "linea_vertical_FerreaAncha"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 16
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "linea_vertical_FerreaEstrecha"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 10
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "CurvaAuxiliar"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    6 3
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "CurvaComplementaria"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    7 3
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Huertos_frutales_citricos"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Vegetacion_HuertosFrutales.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Pueblos"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Pueblos.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "RellenoElectrica"
+               TYPE ELLIPSE
+               POINTS
+                    1 1
+               END
+               FILLED TRUE
+               STYLE
+                    1 50
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "limite_provincial_Discontinua"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    20 10 4 10 4 10
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "limite_municipal_Discontinua"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    11 5 1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Area_Inundacion"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Area_Inundacion.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "AreaPtosPob"
+               TYPE PIXMAP
+               IMAGE "Imagenes/AreaPtosPob.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Bosque"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Bosque.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Bosques_secos"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Bosques_secos.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Cafe_en_bosque"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Cafe_en_bosque.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Huertos_frutales_citricos"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Huertos_frutales_citricos.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Vivero"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Vivero.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Cafe"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Cafe.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Caña"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Caña.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Tabaco"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Tabaco.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "puenteprueba"
+               TYPE PIXMAP
+               IMAGE "Imagenes/puenteprueba.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Henequen"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Henequen.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Arroz"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Arroz.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Cultivo_rotativo"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Cultivo_rotativo.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Hierbas_pastos_artificiales"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Hierbas_pastos_artificiales.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Pantano_inaccesible"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Pantano_inaccesible.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Sin_vegetacion"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Sin_vegetacion.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Maleza_compacta_sin_espinas"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Maleza_compacta_sin_espinas.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Maleza_compacta_con_espinas"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Maleza_compacta_con_espinas.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Mangle"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Mangle.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Manzana"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Manzana.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Zona_diente_de_perro"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Zona_diente_de_perro.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Banco_de_arena_o_bajio"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Banco_de_arena_o_bajio.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Zona_flujo_reflujo_de_arena"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Zona_flujo_reflujo_de_arena.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Zona_flujo_reflujo_de_arenaR"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Zona_flujo_reflujo_de_rocas.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Zona_flujo_reflujo_de_arena_y_piedra"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Zona_flujo_reflujo_de_arena_y_piedra.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Zona_flujo_reflujo_de_fango"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Zona_flujo_reflujo_de_fango.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Zona_flujo_reflujo_de_rocas"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Zona_flujo_reflujo_de_rocas.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Arrecifes_que_afloran"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Arrecifes_que_afloran.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Area_deformada"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Area_deformada.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Superficie_con_arena"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Superficie_con_arena.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Salina_cielo_abierto"
+               TYPE PIXMAP
+               IMAGE "Imagenes/Salina_cielo_abierto.png"
+               TRANSPARENT 50
+          END
+ 
+ 
+          SYMBOL
+               NAME "Pantano_Accesible"
+               #TYPE PIXMAP
+               #IMAGE "Imagenes/Pantano_Accesible.png"
+               #TRANSPARENT 50
+               
+               TYPE vector
+               POINTS
+                    3 3
+                    5 3
+                    -99 -99
+                    9 3
+                    11 3
+                    -99 -99
+                    0 7
+                    2 7
+                    -99 -99
+                    6 7
+                    8 7
+                    
+               END
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Dique"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               #FILLED true
+               
+               STYLE
+                    1 7 1 7
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Relleno"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 4
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Talud"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 3
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Escombrera"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 4
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Arroyo"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               
+               STYLE
+                    12 4
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_RioIntermitente"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               
+               STYLE
+                    15 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_RioSubterraneo"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    8 2
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_CanalConstruccion"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               #  FILLED true
+               
+               STYLE
+                    10 4
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_CanalIntermitente"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               #  FILLED true
+               
+               STYLE
+                    9 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_CanalSoterrado"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    9 6
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_ZanjaSeca"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    9 6
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Zanja"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "ConductoraAgua"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               #  FILLED true
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "ConductoraAguaSoterrada"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_ConductoraCombustible"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    3 1
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_ConductoraGas"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    3 1
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_AbruptoconPlaya"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_AbruptosinPlaya"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Aliviadero"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Presa"
+               TYPE cartoline
+               #LINECAP butt
+               # LINEJOIN miter
+               # LINEJOINMAXSIZE 3
+               #  FILLED true
+               
+               STYLE
+                    1 5
+               END
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Corte"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Escombrera"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    2 10
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Corte"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_CaminoGeneral"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    12 3
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Trillo"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    6 2
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_TerraplenNoMejorado"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+          END
+ 
+ 
+          SYMBOL
+               NAME "pointCarretera"
+               TYPE ELLIPSE
+               POINTS
+                    1 1
+               END
+               FILLED TRUE
+               STYLE
+                    1 10
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Terraplen1"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Terraplen"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               #STYLE
+                    # 12 3
+               # END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_TerraplennoMejorado"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    5 2
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Entresaca"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    8 8
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "limite_provincial"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    15 5 2 5
+                    
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "limite_municipal"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    2 5 10 5 10 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Contornos"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    2 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Contornos"
+               TYPE ELLIPSE
+               POINTS
+                    1 1
+               END
+               #FILLED true
+               PATTERN
+                    1 6
+               END
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Cercas"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 2
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_CercasdePiedra"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 2
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_CercasMetalicas"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 1
+               # FILLED true
+               
+               STYLE
+                    1 12
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "CircleVac"
+               TYPE ELLIPSE
+               POINTS
+                    1 1
+               END
+               STYLE
+                    1 20 1 20
+               END
+               FILLED FALSE
+          END
+ 
+ 
+          SYMBOL
+               NAME "LineaComun"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               #
+          END
+ 
+ 
+          SYMBOL
+               NAME "CircleRell"
+               TYPE ELLIPSE
+               POINTS
+                    1 1
+               END
+               STYLE
+                    1 20 1 20
+               END
+               FILLED TRUE
+          END
+ 
+ 
+          SYMBOL
+               NAME "LineaElec"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED TRUE
+               #
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Topedeferrocarriles"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    2 2
+               END
+          END
+ 
+ 
+          SYMBOL # standard circular brush
+               NAME 'circle'
+               TYPE ELLIPSE
+               POINTS
+                    1 1
+               END
+               FILLED TRUE
+               
+          END
+ 
+ 
+          SYMBOL # Circulo para el trazado de contornos de vegetación en el mtd 1:250 000
+               NAME 'linea_contorno'
+               TYPE ELLIPSE
+               POINTS
+                    1 1
+               END
+               FILLED TRUE
+               
+               PATTERN
+                    1 10 1 10
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Depresion"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Tumulo"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Barranco"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Despeñadero"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Areadeterrazanatural"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Salientesderocas"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Cortinasrompevientos"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               #  FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Fajasestrechasdemaleza"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "FerrocarrilAncho"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 40
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "FerrocarrilEstrecho"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    1 30
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "SuperficieExcavada"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 6
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Yacimacieloabierto"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 6
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "YacimientoCombinado"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 6
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Indice"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 2
+               FILLED true
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_CurvaAuxiliar"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               # FILLED true
+               
+               STYLE
+                    12 4
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_CurvaComplementaria"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               #  FILLED true
+               
+               STYLE
+                    18 4
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Linea_Corte"
+               TYPE cartoline
+               LINECAP butt
+               LINEJOIN miter
+               LINEJOINMAXSIZE 3
+               FILLED true
+               
+               STYLE
+                    1 5
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "Alcantarilla"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#87;"
+               
+               #GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Sifón"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#89;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "PtosPlanimetricos"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#37;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Nivel hidrostático"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#49;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Salto"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#104;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Puentes"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#83;"
+               #
+               POSITION cc
+               GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "MyPuente"
+               TYPE VECTOR
+               #FILLED TRUE
+               POINTS
+                    0 0
+                    .3 .3
+                    1.2 .3
+                    1.5 0
+                    -99 -99
+                    0 1.2
+                    .3 .9
+                    1.2 .9
+                    1.5 1.2
+                    
+               END
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "MyPuenteParche"
+               TYPE VECTOR
+               FILLED TRUE
+               POINTS
+                    0 0
+                    1.5 0
+                    1.5 1.2
+                    0 1.2
+                    0 1.2
+                    0 0
+               END
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "MyPartidoTexto"
+               TYPE VECTOR
+               #FILLED TRUE
+               POINTS
+                    0 0
+                    0 1
+               END
+          END
+ 
+ 
+          SYMBOL
+               NAME "MyAlcantarilla"
+               TYPE VECTOR
+               #FILLED TRUE
+               POINTS
+                    0 0
+                    .4 .4
+                    0 .8
+                    -99 -99
+                    .4 .4
+                    1.4 .4
+                    -99 -99
+                    1.8 0
+                    1.4 .4
+                    1.8 .8
+               END
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "MyCerca"
+               TYPE VECTOR
+               # FILLED FALSE
+               POINTS
+                    0 .4
+                    1 .4
+                    -99 -99
+                    1.3 .1
+                    2 .8
+                    -99 -99
+                    1.3 .8
+                    2 .1
+                    
+               END
+               STYLE
+                    1 30 1 30
+               END
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "DientePerro"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#75;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Faro"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#45;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "RocasBajoNM"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#64;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "RocasSobreNM"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#65;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "RocasqueAfloran"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#66;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "BancodeRocas"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#45;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "PtosRelieve"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#96;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "TorreObsev"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#33;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "PozoPetroleo"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#34;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "DepositoCombust"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#35;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "TanqueElevaTorre"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#39;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Aerodromo"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#40;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Fabrica"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#41;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Chimenea"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#42;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "FabricaConChimenea"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#43;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Cementerio"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#46;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Escuela"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#95;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "CentroAcopio"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#93;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Monumento"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#92;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "EstacReparac"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#91;"
+               
+               #GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "MinaoGalería"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#73;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Gruadecaña"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#71;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "HornodeCalyCarbón"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#62;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Iglesia"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#61;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "EstaciondeRyT"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#60;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "PistadeDeportes"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#59;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "CampodePelota"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#58;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Ruina"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#55;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Ruina"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#55;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "CabinadeTrans"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#54;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "TorredeRyT"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#53;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "EstacionMeteorolo"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#51;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Cueva"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#50;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Flecha"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#101;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "TomaHidraulica106"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#106;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "TomaHidraulica121"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#121;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "TomaHidraulica89"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#89;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "EstaciondeAforo"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#107;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Pozo"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#34;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "PozoMotorViento"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#35;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Manantial"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#72;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Mangle"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#52;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "SalientesdeRocas"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#105;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "RocasAisladas"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#67;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "PiedrasAisladas"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#68;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "SuperficiePedregosa"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#69;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Depresion"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#74;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Tumulo"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#97;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Tuneles"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#108;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "FranjaEstrMaleza"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#80;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Cocotero"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#100;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "VegeXerofila"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#109;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "MangleAislado1"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#110;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "BosqueEspaciado"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#48;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "BosqueGaleria"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#49;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "MangleAislado"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#52;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "Cañuela"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#78;"
+               #
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "YacimCieloAbierto"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#74;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "ZonasPantanosa"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#82;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "SalinaCieloAbierto"
+               #TYPE TRUETYPE
+               #FONT "Simbolos"
+               #CHARACTER "&#98;"
+               #
+               TYPE vector
+               POINTS
+                    0 3
+                    15 3
+                    -99 -99
+                    0 11
+                    15 11
+                    -99 -99
+                    3 0
+                    3 15
+                    -99 -99
+                    11 0
+                    11 15
+                    
+               END
+               
+          END
+ 
+ 
+          SYMBOL
+               NAME "sistemadesalud"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#66;"
+               
+               #GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "centroseducacionales"
+               TYPE TRUETYPE
+               FONT "Symbolos_MM"
+               CHARACTER "&#42;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "instalacionesdeportivas"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#58;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "instalacionesculturales"
+               TYPE TRUETYPE
+               FONT "Symbolos_MM"
+               CHARACTER "&#44;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "alojamturismodescanso"
+               TYPE TRUETYPE
+               FONT "webdings"
+               CHARACTER "&#234;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "otrasinstalaciones"
+               TYPE TRUETYPE
+               FONT "webdings"
+               CHARACTER "&#235;"
+               #
+               POSITION cc
+               GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "generacionelectrica"
+               TYPE TRUETYPE
+               FONT "Symbolos_MM"
+               CHARACTER "&#48;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "subestacioneselectricas"
+               TYPE TRUETYPE
+               FONT "Symbolos_MM"
+               CHARACTER "&#49;"
+               #
+               POSITION cc
+               GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "fabricaseindustrias"
+               TYPE TRUETYPE
+               FONT "Symbolos_MM"
+               CHARACTER "&#50;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "almacenes"
+               TYPE TRUETYPE
+               FONT "Symbolos_MM"
+               CHARACTER "&#37;"
+               #
+               POSITION cc
+               GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "talleres"
+               TYPE TRUETYPE
+               FONT "webdings"
+               CHARACTER "&#64;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "empresasagropecuarias"
+               TYPE TRUETYPE
+               FONT "Symbolos_MM"
+               CHARACTER "&#52;"
+               #
+               POSITION cc
+               GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "yacimientosminascanteras"
+               TYPE TRUETYPE
+               FONT "Symbolos_MM"
+               CHARACTER "&#36;"
+               #
+               POSITION cc
+               GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "transporteferroviario"
+               TYPE TRUETYPE
+               FONT "Symbolos_MM"
+               CHARACTER "&#33;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "almacenamdistdecombustible"
+               TYPE TRUETYPE
+               FONT "Symbolos_MM"
+               CHARACTER "&#38;"
+               #
+               POSITION cc
+               GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "gruposelectrogenos"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#43;"
+               #
+               POSITION cc
+               GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "transportemaritimo"
+               TYPE TRUETYPE
+               FONT "Symbolos_MM"
+               CHARACTER "&#34;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "maquinariasherramientas"
+               TYPE TRUETYPE
+               FONT "Symbolos_MM"
+               CHARACTER "&#51;"
+               
+               # GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "mediosmecanizados"
+               TYPE TRUETYPE
+               FONT "webdings"
+               CHARACTER "&#234;"
+               #
+               POSITION cc
+               GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "mediosdecomunicacion"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#40;"
+               #
+               POSITION cc
+               GAP 0
+          END
+ 
+ 
+          SYMBOL
+               NAME "mediosdecomputacion"
+               TYPE TRUETYPE
+               FONT "Symbolos_MM"
+               CHARACTER "&#46;"
+               
+               # GAP 0
+          END
+		  SYMBOL
+               NAME "CentralAzucarero"
+               TYPE TRUETYPE
+               FONT "SymbolosMM"
+               CHARACTER "&#50;"
+               
+               # GAP 0
+          END
+         
+          SYMBOL
+               NAME "Fabrica"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#43;"
+               
+               # GAP 0
+          END
+ 
+          SYMBOL
+               NAME "MinaoGaleria"
+               TYPE TRUETYPE
+               FONT "Simbolos"
+               CHARACTER "&#73;"
+               
+               # GAP 0
+          END
+          
+          SYMBOL
+               NAME "PlantaElectrica"
+               TYPE TRUETYPE
+               FONT "SymbolosMM"
+               CHARACTER "&#49;"
+               
+               # GAP 0
+          END
+          
+         SYMBOL
+               NAME "TorreRadioTelev"
+               TYPE TRUETYPE
+               FONT "SymbolosMM"
+               CHARACTER "&#39;"
+               
+               # GAP 0
+          END    
+          
+          
