@@ -14,6 +14,9 @@ Geotrygon es considerado en sí mismo un proyecto dentro del marco de trabajo Ks
 Geotrygon is considered in itself a project under Ksike Larva web framework, so for its installation it is required to locate its source code within the project directory on Ksike Larva is hosted.
 
 git clone https://github.com/ameksike/ksike.larva.git
+
 cd ksike.larva/projects/
+
 git clone https://github.com/ameksike/geotrygon.git
+
 
